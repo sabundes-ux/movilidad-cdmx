@@ -1,0 +1,16 @@
+
+#Temporary files
+*.tmp
+*.temp
+
+._*
+.S
+
+#Media and design files
+*.psd
+*.ai
+*.mov
+*.avi
+*.png
+*.jpg
+*.pdf
