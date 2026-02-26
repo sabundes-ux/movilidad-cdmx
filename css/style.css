@@ -1,11 +1,13 @@
 :root {
+    --nav-color: rgb(255, 230, 0);
     --text-color: rgb(0, 0, 0);
     --bg-color: rgb(80, 168, 255);
-    --accent-color: rgb(0, 0, 0);
+    --accent-color: rgb(255, 0, 0);
     --title-font: "Noticia Text", serif;
     --title-color: rgb(255, 255, 255);
     --subtitle-color: rgb(255, 0, 0);
     --text-font: "Google Sans", sans-serif;
+    --nav-font: "Big Shoulders Inline", sams-serif;
 }
 
 html {
@@ -13,7 +15,9 @@ html {
 }
 
 header {
-    text-align: center;
+    text-align: center; 
+    font-family: var(--title-font);
+    }
 }
 
 head {
@@ -27,10 +31,23 @@ body {
     font-size: 1rem;
 }
 
+nav {
+    display: block;
+    text-align: center;
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    font-weight: 900;
+    a:hover {
+        color: var(--accent-color);
+    }
+}
 a {
     color: inherit;
 }
 
+header a {
+    font-size: 6rem;
+}
 h1,
 h2,
 h3,
@@ -43,6 +60,9 @@ h6 {
     font-variation-settings: "wdth" 400, "wght" 400;
 }
 
+nav {
+    font-size: 10em;}
+
 h1 {
     font-size: 5em;
 }
@@ -52,17 +72,15 @@ h2 {
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 h4 {
     font-size: 1em;
 }
 
-h5 {
-    font-size: 1em;
-}
-
-h6 {
-    font-size: 1em;
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--title-color);
 }
