@@ -1,9 +1,11 @@
 :root {
     --text-color: rgb(0, 0, 0);
-    --bg-color: hsl(210, 100%, 66%);
+    --bg-color: hsl(0, 0%, 100%);
     --subtitle-color: rgb(255, 0, 0);
     --font: "Iki Mono Variable", sans-serif;
+    --title-font: "gelica", sans-serif;     
 }
+
 
 html {
     font-size: 100%;
@@ -11,15 +13,6 @@ html {
     box-sizing: border-box;
 }
 
-background {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 * {
     box-sizing: inherit;
 }
@@ -102,6 +95,7 @@ h4,
 h5,
 h6 {
     color: var(--title-color);
+    font-family: var(--title-font);
     font-variation-settings: "wdth" 400, "wght" 400;
 }
 h1 {
