@@ -4,7 +4,11 @@
     --subtitle-color: rgb(255, 0, 0);
     --font: "gelica", sans-serif;
     --title-font: "gelica", sans-serif;
-    background-color: d3512b;
+    --accent-color: #00ccff;
+    --nav-color: #000;
+    --nav-font: "gelica", sans-serif;
+    --title-color: #000;
+    --header-height: 4rem;
 }
 
 
@@ -19,12 +23,21 @@ html {
 }
 
 header {
+    width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
     font-family: var(--title-font);
-    padding: 1em 2em;
+    padding: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .logo a {
@@ -73,8 +86,7 @@ img {
     height: auto;
 }
 
-main,
-header {
+main {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -95,6 +107,7 @@ a {
 }
 
 a:hover {
+    transition: all 1s ease;
     color: var(--accent-color);
     font-weight: 900;
 }
@@ -126,6 +139,9 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1em;
+    width: 100%;
+    padding: 0 3em;
 }
 
 header nav .logo {
@@ -173,14 +189,12 @@ h4 {
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    height: 100vh;
+    justify-content: flex-start;
+    height: calc(100vh - var(--header-height));
+    padding-top: var(--header-height);
     text-align: left;
     width: 100%;
-    float: left;
-    /* padding-left: 3em; */
-    background-color: ;
-
+    background-color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -194,26 +208,26 @@ h4 {
 article {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     text-align: left;
     width: 50%;
-    float: left;
-    line-height: 1.5em;
+    line-height: 1.1em;
     padding: 3em;
     padding-left: 0;
+    padding-top: 0;
 }
 
 figure {
     display: flex;
     padding-top: 2em;
     padding-bottom: 4em;
-    padding-right: 2em;;
+    padding-right: 2em;
     flex-direction: column;
     align-items: center;
     margin: 0;
     width: 50%;
     height: 100vh;
     float: left;
+    padding-top: 3em;
 }
 
 figure img {
@@ -234,7 +248,22 @@ footer {
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+}
+
+a#centro-logo {
+    display: block;
+    height: auto;
+    padding: 0 3em;
+}
+a#centro-logo svg {
+    transition: all 1s ease;
+    width: auto;
+    height: 1em;
+}
+
+a#centro-logo:hover svg {
+    fill: var(--accent-color);
 }
 
 .footer-content {
@@ -243,14 +272,4 @@ footer {
 
 .footer-right {
     padding-right: 3em;
-    padding-bottom: .5em;
-}
-
-.text-box {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 20px;
-    padding: 2em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    margin-bottom: 2em;
 }
