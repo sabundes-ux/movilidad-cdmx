@@ -1,9 +1,10 @@
 :root {
     --text-color: rgb(0, 0, 0);
-    --bg-color: hsl(0, 0%, 100%);
+    --bg-color: #ffffc5;
     --subtitle-color: rgb(255, 0, 0);
-    --font: "Iki Mono Variable", sans-serif;
-    --title-font: "gelica", sans-serif;     
+    --font: "gelica", sans-serif;
+    --title-font: "gelica", sans-serif;
+    background-color: d3512b;
 }
 
 
@@ -33,6 +34,7 @@ header .logo a {
 header .logo a:hover {
     color: var(--accent-color);
 }
+
 header .sections {
     display: flex;
     gap: 1.5rem;
@@ -47,6 +49,7 @@ header .sections a {
 header .sections a:hover {
     text-decoration: underline;
 }
+
 head {
     display: block;
 }
@@ -55,20 +58,28 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0;
     margin: 0;
+    background: url('../img/familiamigrante.svg');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-repeat: no-repeat;
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-main, header, footer {
+
+main,
+header,
+footer {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-  align-items: center;
+    align-items: center;
 }
 
 nav {
@@ -78,14 +89,17 @@ nav {
     font-family: var(--nav-font);
     font-weight: 900;
 }
+
 a {
     color: inherit;
     font-weight: 400;
 }
+
 a:hover {
     color: var(--accent-color);
     font-weight: 900;
 }
+
 /* general header link sizing is managed by specific selectors */
 
 h1,
@@ -98,10 +112,12 @@ h6 {
     font-family: var(--title-font);
     font-variation-settings: "wdth" 400, "wght" 400;
 }
+
 h1 {
     font-size: 3em;
 }
-    /* reset nav font-size so links are normal size */
+
+/* reset nav font-size so links are normal size */
 nav {
     font-size: 1rem;
 }
@@ -114,7 +130,8 @@ header nav {
 }
 
 header nav .logo {
-    margin-right: 2rem; /* separate logo from menu */
+    margin-right: 2rem;
+    /* separate logo from menu */
 }
 
 header nav .menu {
@@ -129,6 +146,7 @@ header nav .menu a {
     color: var(--accent-color);
     text-decoration: none;
     font-size: 1rem;
+    --font
 }
 
 header nav .menu a:hover {
@@ -136,13 +154,13 @@ header nav .menu a:hover {
 }
 
 h1 {
-    font-size: 3em;
-    color: white;
+    font-size: .8em;
+    color: black(0, 0, 0);
 }
 
 h2 {
     font-size: 1em;
-    
+
 }
 
 h3 {
@@ -162,10 +180,8 @@ h4 {
     width: 100%;
     float: left;
     /* padding-left: 3em; */
-    background-image: url('../img/FotoBackgroundMigracion.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: ;
+
 }
 
 @media (min-width: 768px) {
@@ -187,8 +203,10 @@ article {
     float: left;
     padding: 3em;
 }
+
 figure {
     display: flex;
+    padding-bottom: 4em;
     flex-direction: column;
     align-items: center;
     margin: 0;
