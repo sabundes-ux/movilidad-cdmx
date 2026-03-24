@@ -4,7 +4,7 @@
     --subtitle-color: rgb(255, 0, 0);
     --font: "gelica", sans-serif;
     --title-font: "gelica", sans-serif;
-    --accent-color: #00ccff;
+    --accent-color: #ff00e1;
     --nav-color: #000;
     --nav-font: "gelica", sans-serif;
     --title-color: #000;
@@ -51,11 +51,12 @@ header {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
     font-family: var(--title-font);
-    padding: 0;
+    padding: 0; 
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 header nav {
