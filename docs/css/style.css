@@ -75,7 +75,7 @@ header nav .logo {
 
 header nav .logo a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--nav-color);
     font-family: var(--title-font);
 }
 
@@ -92,13 +92,14 @@ header nav .menu {
 }
 
 header nav .menu a {
-    color: var(--accent-color);
+    color: var(--nav-color);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 900;
 }
 
 header nav .menu a:hover {
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
