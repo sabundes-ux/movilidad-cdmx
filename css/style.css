@@ -1,9 +1,13 @@
+@font-face {
+    font-family: 'Nidus';
+    src: url('./Nidus-Regular.woff2') format('woff2');
+}
 :root {
     --text-color: rgb(0, 0, 0);
     --bg-color: #ffffc5;
     --subtitle-color: rgb(255, 0, 0);
-    --font: "gelica", sans-serif;
-    --title-font: "gelica", sans-serif;
+    --font: "Nidus", sans-serif;
+    --title-font: "Nidus", sans-serif;
     --accent-color: #ff00ea;
     --nav-color: #000;
     --nav-font: "gelica", sans-serif;
